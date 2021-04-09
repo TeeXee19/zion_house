@@ -97,9 +97,7 @@
                 </div>
             </div>    
             <!-- Header END -->
-
-            <!-- Side Nav START -->
-            <div class="side-nav">
+  <div class="side-nav">
                 <div class="side-nav-inner">
                     <ul class="side-nav-menu scrollable">
                         <li class="nav-item">
@@ -121,10 +119,10 @@
                                 </span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li >
+                                <li class="active">
                                     <a href="create_user.html">Create User</a>
                                 </li>
-                                <li class="active">
+                                <li >
                                     <a href="users.html">Users</a>
                                 </li>
                                 <li >
@@ -146,7 +144,7 @@
                                 <li>
                                     <a href="profile.html">Profile</a>
                                 </li>
-                                <li>
+                                <li >
                                     <a href="settings.html">Setting</a>
                                 </li>
                             </ul>
@@ -175,122 +173,126 @@
             </div>
             <!-- Side Nav END -->
 
-              <!-- Page Container START -->
+            <!-- Page Container START -->
             <div class="page-container">
+                
 
-                <!-- Content Wrapper START -->
+                 <!-- Content Wrapper START -->
                 <div class="main-content">
-                    <div class="page-header">
-                        <h2 class="header-title">List of Users</h2>
-                        <div class="header-sub-title">
-                            <nav class="breadcrumb breadcrumb-dash">
-                                <a href="#" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Dashboard</a>
-                                <a class="breadcrumb-item" href="#">Manage Users</a>
-                                <span class="breadcrumb-item active">Lsit of Users</span>
-                            </nav>
-                        </div>
-                    </div>
-
-                    <div class="alert alert-success">
-                        This is a success alert—check it out!
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">   
-                            <div class="float-right text-right m-b-30">
-                                <button class="btn btn-primary">
-                                    <i class="anticon anticon-file-excel m-r-5"></i>
-                                    <span>Export</span>
-                                </button>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-hover e-commerce-table">
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <div class="checkbox">
-                                                    <input id="checkAll" type="checkbox">
-                                                    <label for="checkAll" class="m-b-0"></label>
+                    <div class="container">
+                        <div class="tab-content m-t-15">
+                            <div class="" >
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Basic Infomation</h4>
+                                    </div>
+                                    <div class="card-body">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="firstName">First Name:</label>
+                                                    <input type="text" class="form-control" id="firstName" placeholder="First Name" value="Monkey" disabled="">
                                                 </div>
-                                            </th>
-                                            <th>ID</th>
-                                            <th>Customer Name</th>
-                                            <th>Phone No</th>
-                                            <th>Address</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="check-item-1" type="checkbox">
-                                                    <label for="check-item-1" class="m-b-0"></label>
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="lastName">Last Name: </label>
+                                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="D" disabled="">
                                                 </div>
-                                            </td>
-                                            <td>
-                                                #5331
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <h6 class="m-b-0">Erin Gonzales</h6>
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="middleName">Middle Name:</label>
+                                                    <input type="text" class="form-control" id="middleName" placeholder="Middle Name" value="Luffy" disabled="">
                                                 </div>
-                                            </td>
-                                            <td>08099338843</td>
-                                            <td>No. 2 My House Road, Somewhere</td>
-                                            <td class="text-right">
-                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right" onclick="location.href='./view-user.html';">
-                                                    <i class="anticon anticon-eye" data-toggle="tooltip" data-placement="bottom" title="View"></i>
-                                                </button>
-                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
-                                                    <i class="anticon anticon-edit" data-toggle="tooltip" data-placement="bottom" title="Edit"></i>
-                                                </button>
-                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded">
-                                                    <i class="anticon anticon-delete" data-toggle="tooltip" data-placement="bottom" title="Delete"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <div class="checkbox">
-                                                    <input id="check-item-1" type="checkbox">
-                                                    <label for="check-item-1" class="m-b-0"></label>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="phoneNumber">Phone Number: </label>
+                                                    <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number" disabled="">
                                                 </div>
-                                            </td>
-                                            <td>
-                                                #5331
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <h6 class="m-b-0">Monkey D. Luffy</h6>
+                                                 <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="email">Email:</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="email" value="@marshallnich" disabled="">
                                                 </div>
-                                            </td>
-                                            <td>08099338843</td>
-                                            <td>East Blue</td>
-                                            <td class="text-right">
-                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
-                                                    <i class="anticon anticon-eye" data-toggle="tooltip" data-placement="bottom" title="View"></i>
-                                                </button>
-                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
-                                                    <i class="anticon anticon-edit" data-toggle="tooltip" data-placement="bottom" title="Edit"></i>
-                                                </button>
-                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded">
-                                                    <i class="anticon anticon-delete" data-toggle="tooltip" data-placement="bottom" title="Delete"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                 <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="gender">Gender </label>
+                                                    <select id="gender" class="form-control" disabled="">
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                        <option value="Other">Others</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="project">Proposed Project </label>
+                                                    <select id="project" class="form-control" disabled="">
+                                                        <option>Select Project</option>
+                                                        <option selected>House</option>
+                                                        <option>Car</option>
+                                                        <option>Door</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="state">State </label>
+                                                    <select id="state" class="form-control" disabled="">
+                                                        <option>FCT</option>
+                                                        <option>Lagos</option>
+                                                        <option>Kano</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="lga">LGA </label>
+                                                    <select id="lga" class="form-control" disabled="">
+                                                        <option>Bwari</option>
+                                                        <option>Municipal</option>
+                                                        <option>Gwagwalada</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Bank Details</h4>
+                                    </div>
+                                    <div class="card-body">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label class="font-weight-semibold" for="accountName">Account Name: </label>
+                                                    <input type="text" class="form-control" id="accountName" name="accountName" placeholder="Account Name"  disabled>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label class="font-weight-semibold" for="accountNo">Account No </label>
+                                                    <input type="text" class="form-control" id="accountNo" name="accountNo" placeholder="Account Number" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="bankName">Bank Name: </label>
+                                                    <input type="text" class="form-control" id="bankName" placeholder="Bank Name"  disabled>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="accountType">Account Type </label>
+                                                    <select id="accountType" class="form-control"  disabled>
+                                                        <option>Select Account Type</option>
+                                                        <option>Credit Account</option>
+                                                        <option>Debit Account</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="branch">Branch:</label>
+                                                    <input type="text" class="form-control" id="branch" placeholder="Branch (optional)" disabled>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Content Wrapper END -->
+
                 <!-- Footer START -->
                 <footer class="footer">
                     <div class="footer-content">
-                        <p class="m-b-0">Copyright © 2019 Theme_Nate. All rights reserved.</p>
+                        <p class="m-b-0">Copyright © 2021 Zion House Tabernacle. All rights reserved.</p>
                         <span>
                             <a href="" class="text-gray m-r-15">Term &amp; Conditions</a>
                             <a href="" class="text-gray">Privacy &amp; Policy</a>
@@ -300,7 +302,6 @@
                 <!-- Footer END -->
 
             </div>
-            <!-- Page Container END -->
         </div>
     </div>
 
