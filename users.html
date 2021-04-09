@@ -9,7 +9,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo.jpeg">
 
-    <!-- page css -->
+
+    <link href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
 
     <!-- Core css -->
     <link href="assets/css/app.min.css" rel="stylesheet">
@@ -196,7 +197,57 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">   
+                        <div class="card-body"> 
+                            <form action="search" >
+                                <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="firstName">First Name: <span class="required-fields">*</span></label>
+                                                    <input type="text" class="form-control" id="firstName" placeholder="First Name" value="Monkey" required>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="lastName">Last Name: <span class="required-fields">*</span></label>
+                                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="D" required>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label class="font-weight-semibold" for="middleName">Middle Name:</label>
+                                                    <input type="text" class="form-control" id="middleName" placeholder="Middle Name" value="Luffy" required>
+                                                </div>
+                                            </div>
+
+                                 <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label class="font-weight-semibold" for="project">Proposed Project <span class="required-fields">*</span></label>
+                                                    <select id="project" class="custom-select">
+                                                        <option>Select Project</option>
+                                                        <option>House</option>
+                                                        <option>Car</option>
+                                                        <option>Door</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label class="font-weight-semibold" for="state">State <span class="required-fields">*</span></label>
+                                                    <select id="state" class="custom-select" required>
+                                                        <option>FCT</option>
+                                                        <option>Lagos</option>
+                                                        <option>Kano</option>
+                                                    </select>
+                                                </div>              
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Date Range</label>
+                                    <div class="d-flex align-items-center">
+                                        <input type="text" class="form-control datepicker-input" name="start" placeholder="From">
+                                        <span class="p-h-10">to</span>
+                                        <input type="text" class="form-control datepicker-input" name="end" placeholder="To">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary"> Search </button>
+                                  
+                            </form>  
+
+                            <hr>
                             <div class="float-right text-right m-b-30">
                                 <button class="btn btn-primary">
                                     <i class="anticon anticon-file-excel m-r-5"></i>
@@ -242,7 +293,7 @@
                                                 <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right" onclick="location.href='./view-user.html';">
                                                     <i class="anticon anticon-eye" data-toggle="tooltip" data-placement="bottom" title="View"></i>
                                                 </button>
-                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
+                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right" onclick="location.href='./edit-user.html';">
                                                     <i class="anticon anticon-edit" data-toggle="tooltip" data-placement="bottom" title="Edit"></i>
                                                 </button>
                                                 <button class="btn btn-icon btn-hover btn-sm btn-rounded">
@@ -269,10 +320,10 @@
                                             <td>08099338843</td>
                                             <td>East Blue</td>
                                             <td class="text-right">
-                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
+                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right" onclick="location.href='./view-user.html';">
                                                     <i class="anticon anticon-eye" data-toggle="tooltip" data-placement="bottom" title="View"></i>
                                                 </button>
-                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
+                                                <button class="btn btn-icon btn-hover btn-sm btn-rounded pull-right" onclick="location.href='./view-user.html';">
                                                     <i class="anticon anticon-edit" data-toggle="tooltip" data-placement="bottom" title="Edit"></i>
                                                 </button>
                                                 <button class="btn btn-icon btn-hover btn-sm btn-rounded">
@@ -312,8 +363,18 @@
     <script src="assets/vendors/chartjs/Chart.min.js"></script>
     <script src="assets/js/dashboard-default.js"></script>
 
+
+<!-- page js -->
+<script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
+
+
     <!-- Core JS -->
     <script src="assets/js/app.min.js"></script>
+
+    <script>
+       $('.datepicker-input').datepicker();
+    </script>
 
 </body>
 
